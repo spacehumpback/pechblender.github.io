@@ -63,6 +63,16 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "instagram"
     url = "https://instagram.com/pechblender"
 
+  [[params.social]]
+    name = "bandcamp"
+    url = "https://bandcamp.com/orpiment"
+
+  [[params.social]]
+    name = "youtube"
+    url = "https://youtube.com/pechblender"
+
+
+
  # [[params.social]]
   #  name = "github"
    # url = "https://github.com/"

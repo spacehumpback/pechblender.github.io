@@ -2,14 +2,14 @@
 ####### Changes made here will not effect demo site
 
 languageCode = "en-us"
-title = "Alpha by HTML5 UP"
-baseURL = "https://example.com"
+title = "Pechblender"
+baseURL = "https://pechblender.onrender.com"
 theme = "hugo-html5up-alpha-master"
 disqusShortname = ""
 
 [params]
-  description = "Another fine responsive site template freebie by HTML5 UP."
-  images = ["images/pic01.jpg"]
+  description = "Analog Photography & Music "
+  images = ["images/bg.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"

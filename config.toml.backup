@@ -1,8 +1,8 @@
 baseURL = "https://example.com"
-title = "HUGO.386"
+title = "Diana Kurchs Sa"
 languageCode = "en"
 DefaultContentLanguage = "en" # Change this to change the site's language
-theme = "hugo.386"
+theme = "hugo.386-master"
 preserveTaxonomyNames = true
 
 [params]

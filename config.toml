@@ -9,7 +9,7 @@ disqusShortname = ""
 
 [params]
   description = "Analog Photography & Music "
-  images = ["images/bg.jpg"]
+  images = "images/bg.jpg"
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"

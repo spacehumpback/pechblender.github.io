@@ -1,99 +1,85 @@
+####### This is an EXAMPLE config file!!
+####### Changes made here will not effect demo site
+
+languageCode = "en-us"
+title = "Alpha by HTML5 UP"
 baseURL = "https://example.com"
-title = "Diana Kurchs Salamibaum"
-languageCode = "en"
-DefaultContentLanguage = "en" # Change this to change the site's language
-theme = "hugo.386-master"
-preserveTaxonomyNames = true
+theme = "hugo-html5up-alpha-master"
+disqusShortname = ""
 
 [params]
-    # The name to display as main title in the home page
-    mainpagetitle = "Salamibaum"
+  description = "Another fine responsive site template freebie by HTML5 UP."
+  images = ["images/pic01.jpg"]
+  author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
+  copyright = "© Untitled. All rights reserved."
+  design = "Design: [HTML5 UP](http://html5up.net/)"
+  mainSections = ["blog"]
 
-    # The subtitle to display under the title in the home page
-    mainpagesubtitle = "Welcome to my cooking palace!" 
+### Footer Social Media Links ###
+[[params.share]]
+title = "facebook"
+icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
+link = "https://www.facebook.com/"
 
-    # The description of your website. It will be displayed in the home page
-    mainpagedesc = "This theme is the Hugo port of the BOOTSTRA.386 theme for a cool retro look on your blog. Check the links below to access the posts."
+[[params.share]]
+title = "twitter"
+icon = "fa-twitter"
+link = "https://twitter.com/"
 
-    # The name to display in the copyright section in the footer
-    copyrightname = "JM Fergeau"
+[[params.share]]
+title = "linkedin"
+icon = "fa-linkedin"
+link = "https://www.linkedin.com"
 
-    # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    copyrighturl = "http://jmf-portfolio.netlify.com"
-
-    # Show the "built on Hugo" disclaimer
-    showhugo = true
-
-    # Urls for social networks
-    facebook = "https://facebook.com"
-    twitter = "https://twitter.com"
-    linkedin = "https://linkedin.com"
-    github = "https://github.com"
-    gitlab = "https://gitlab.com"
-
-    # Enables or disables the loading animations. false activates them. Default is false.
-    loadfastload = false
-
-    # Sets the speed for the page loading effect. Default is 1.0.
-    loadspeedfactor = 1.0
-
-    # Enables or disables the second flyby cursor. Default is false.
-    loadonepass = false
-
-[params.copyright]
-    name = "JM Fergeau"
-
-    # The url to use as link in the copyright name in the footer. Leave empty to use none.
-    url = "http://jmf-portfolio.netlify.com"
-
-    # Text to go before copyright information
-    prefix = "[hugo.386 theme by Max le Fou](https://gitlab.com/maxlefou/hugo.386)"
-
-    # Text to go between copyright and hugo disclaimer (if enabled)
-    suffix = "Example site"
-
+### For Pages the .RelPermalink must match the menu .URL
+### For sections the name/directory must match the menu .Identifier
 [menu]
-  # This displays buttons in the navbar to access your contents
   [[menu.main]]
-    identifier = "about" # An unique identifier for the button
-    name = "About"       # A display name for the button
-    url = "/about/"      # The path to the content. It can lead to a single page (like here)
-    weight = 10          # A number to order the buttons in the navbar
-
+    identifier = "generic"
+    name = "Generic"
+    url = "/generic/"
+    weight = 10
   [[menu.main]]
-    identifier = "posts"
-    name = "All posts"
-    url = "/post/"       # The path can lead to a content folder too.
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
     weight = 20
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-
-
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
+  [[menu.main]]
+    identifier = "elements"
+    name = "Elements"
+    url = "/elements/"
+    weight = 30
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+  [[menu.main]]
+    identifier = "submenu"
+    name = "Submenu"
+    url = "#"
+    weight = 50
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "one"
+    name = "Option One"
+    url = "#"
+    weight = 51
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "two"
+    name = "Option Two"
+    url = "#"
+    weight = 52
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "three"
+    name = "Option Three"
+    url = "#"
+    weight = 53
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "four"
+    name = "Option Four"
+    url = "#"
+    weight = 54

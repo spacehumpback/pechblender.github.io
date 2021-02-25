@@ -1,17 +1,49 @@
-baseURL = "http://example.com/"
-languageCode = "en-us"
-title = "Hugo Grayscale Theme"
-theme = "hugograyscale-master"
-#googleAnalytics = ""
-disableKinds = ["taxonomy", "taxonomyTerm"]
+baseurl = "https://example.com"
+title = "Hugo Tanka Theme Demo"
+author = "Nan Xiao"
+canonifyurls = true
+languagecode = "en"
+theme = "hugo-tanka-master"
+
+enableEmoji = true
+hasCJKLanguage = false
+
+pygmentsstyle = "vs"
+pygmentscodefences = true
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 [params]
-    # Provide some metadata for search and indexing services
-    description = "A port of the Grayscale theme to Hugo"
+  sitename = "Hugo Tanka Theme"
+  faviconfile = "images/favicon.png"
+  highlightjs = true
+  highlightjslanguages = ["r", "python", "stan"]
+  uselatex = true
+  progressively = false
+# commentsrepo = "user/repo"
 
-[Author]
-    name = "RunningStream"
-    email = "dco@runningstream.net"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
-[Social]
-    twitter = "stream_running"
+[[menu.primary]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.primary]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.primary]]
+    name = "GitHub"
+    url = "https://github.com/nanxstats"
+    weight = 3
+[[menu.primary]]
+    name = "Twitter"
+    url = "https://twitter.com/nanxstats"
+    weight = 4
+[[menu.primary]]
+    name = "Subscribe"
+    url = "/index.xml"
+    weight = 5

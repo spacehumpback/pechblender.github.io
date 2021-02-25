@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://pechblender.onrender.com"
 title = "Somrat | Hugo Portfolio Template"
-theme = "somrat"
+theme = "somrat-master"
 # post pagination
 paginate = "6"
 # post excerpt

@@ -15,8 +15,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "Hello Friend"
-    subtitle = "A simple theme for Hugo"
+    title = "Pechblender"
+    subtitle = "Analog Photography and Music"
     keywords = ""
     copyright = ""
     menuMore = "Show more"

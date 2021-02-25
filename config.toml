@@ -1,5 +1,5 @@
-baseurl = "http://www.example.com"
-title = "Yusuke Ishimi"
+baseurl = "http://www.pechblender.onrender.com"
+title = "pechblender"
 
 theme = "hugo-coder-portfolio-master"
 

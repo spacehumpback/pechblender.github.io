@@ -1,135 +1,90 @@
-baseurl = "http://www.pechblender.onrender.com"
-title = "pechblender"
+baseURL = "https://pechblender.onrender.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Pechblender"
+theme = "hermit-master"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "yourdiscussshortname"
 
-theme = "hugo-coder-portfolio-master"
+[author]
+  name = "Erik Heimansberg"
 
-DefaultContentLanguage = "en"
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
 
-paginate = 20
-
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-pygmentsUseClasses = true
-
-disqusShortname = "yourdiscussshortname"
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
 
 [params]
-    author = "Yusuke Ishimi"
-    description = "Yusuke Ishimi's personal website"
-    keywords = "blog,developer,personal"
-    info = "WEB AND APPS ENGINEER"
-    avatarurl = "images/avatar.jpg"
-    footercontent = "Enter a text here."
-    fixedbarContent = "Do you want to know me more private?→"
-    fixedbarContentAfter = "Thank You! Please share it if you like it→"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-    hideCredits = false
-    hideCopyright = false
+  # Metadata mostly used in document's head
+  # description = ""
+  # images = [""]
+  themeColor = "#494f5c"
 
-    # Bottom sns share
-    snsShare = true
-    # Popular sns share
-    # if you want add sns. please message!
-    enableTwitterShare = true
-    enableFacebookShare = true
-    enableHatenaShare = true
-    enableLineShare = true
-    enableLinkedInShare = true
+  homeSubtitle = "Analog Photography & Music"
+  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  bgImg = "/images/bg.jpg"  # Homepage background-image URL
 
-    thumbnail = "images/tn.png"
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/username/repository/commit/"
 
-    # Custom CSS
-    custom_css = []
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = false  # Set "text-align: justify" to `.content`.
 
-    # Alignment of Mobile Menu items
-    itemscentered = true
+  relatedPosts = false  # Add a related content section to all single posts page
 
-    # RTL support
-    rtl = false
+  code_copy_button = true # Turn on/off the code-copy-button for code-fields
+  
+  # Add custom css
+  # customCSS = ["css/foo.css", "css/bar.css"]
 
-    langseparator = "|"
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/meisenberg999"
 
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/naro143/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 2
-    url = "https://twitter.com/naro143/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin"
-    weight = 3
-    url = "https://www.linkedin.com/in/naro143/"
-[[params.social]]
-    name = "LinkedIn"
-    weight = 4
-    url = "https://www.linkedin.com/in/naro143/"
+  [[params.social]]
+    name = "instagram"
+    url = "https://instagram.com/pechblender"
 
-[languages]
-    [languages.en]
-        languagecode = "en"
-        languagename = "English" # The language name to be displayed in the selector.
-        title = "Yusuke Ishimi"
+  [[params.social]]
+    name = "bandcamp"
+    url = "https://bandcamp.com/orpiment"
 
-        # You can configure the theme parameter for each language.
-        [languages.en.params]
-            author = "Yusuke Ishimi"
-            info = "WEB AND APPS ENGINEER"
-            description = "Yusuke Ishimi's personal website"
-            keywords = "blog,developer,personal"
-
-        [languages.en.menu] # It is possible to change the menu too.
-
-            [[languages.en.menu.main]]
-                name = "About"
-                weight = 1.0
-                url = "about"
-
-            [[languages.en.menu.main]]
-                name = "Blog"
-                weight = 2.0
-                url = "posts"
-
-            [[languages.en.menu.main]]
-                name = "Projects"
-                weight = 3
-                url = "projects"
-            [[languages.en.menu.main]]
-                name = "Contact me"
-                weight = 5
-                url = "contact"
+  [[params.social]]
+    name = "youtube"
+    url = "https://youtube.com/pechblender"
 
 
-    [languages.ja]
-        languagecode = "ja"
-        languagename = "Japanese"
-        title = "石見 優丞"
 
-        [languages.ja.params]
-            author = "石見 優丞"
-            description = "石見のサイト"
-            keywords = "blog,developer,strona domowa"
-            info = "WEBとアプリのエンジニア"
+ # [[params.social]]
+  #  name = "github"
+   # url = "https://github.com/"
 
-        [languages.ja.menu]
-            [[languages.ja.menu.main]]
-                name = "テーマについて"
-                weight = 1.0
-                url = "ja/about"
-            [[languages.ja.menu.main]]
-                name = "ブログ"
-                weight = 2.0
-                url = "ja/posts"
-            [[languages.ja.menu.main]]
-                name = "プロジェクト"
-                weight = 3
-                url = "ja/projects"
-            [[languages.ja.menu.main]]
-                name = "お問い合わせ"
-                weight = 5
-                url = "ja/contact"
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about-hugo/"
+    weight = 20

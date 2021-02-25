@@ -1,7 +1,7 @@
-baseurl = "http://www.example.com"
-title = "Yusuke Ishimi"
+baseurl = "http://www.pechblender.onrender.com"
+title = "pechblender"
 
-theme = "coder-portfolio"
+theme = "hugo-coder-portfolio-master"
 
 DefaultContentLanguage = "en"
 

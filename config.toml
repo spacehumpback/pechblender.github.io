@@ -1,8 +1,8 @@
 # ------------------------------------- #
 # ---- General Settings --------------- #
 # ------------------------------------- #
-baseURL = "https://example.com"
-title = "Den"
+baseURL = "https://pechblender.onrender.com"
+title = "Pechblender"
 theme = "hugo-theme-den-master"
 #enableRobotsTXT = true       # generate robots.txt
 enableEmoji = true           # use emoji support

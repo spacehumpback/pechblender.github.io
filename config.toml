@@ -1,7 +1,7 @@
 baseurl = "http://www.example.com"
 title = "Yusuke Ishimi"
 
-theme = "coder-portfolio-master"
+theme = "hugo-coder-portfolio-master"
 
 DefaultContentLanguage = "en"
 

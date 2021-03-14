@@ -1,6 +1,6 @@
 # Use an empty string if you have multiple domain linking to your website
 # This string is used to generate the absolute URL for your assets.
-baseURL = 'https://pechblender.onrender.com/'
+baseURL = 'https://example.com/'
 defaultContentLanguage = 'en'
 # Emoji in markdown files
 enableEmoji = true
@@ -10,7 +10,7 @@ paginate = 10
 theme = 'pico'
 # Title of the website is used for the meta tag title
 # and the square icon (not the favicon)
-title = 'pico'
+title = 'Pico'
 
 [params]
 customCSS = [

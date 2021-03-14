@@ -1,135 +1,91 @@
-# Use an empty string if you have multiple domain linking to your website
-# This string is used to generate the absolute URL for your assets.
-baseURL = 'https://example.com/'
-defaultContentLanguage = 'en'
-# Emoji in markdown files
-enableEmoji = true
-languageCode = 'en-us'
-# Number of blog post per page
-paginate = 10
-theme = 'pico'
-# Title of the website is used for the meta tag title
-# and the square icon (not the favicon)
-title = 'Pico'
+baseURL = "https://pechblender.onrender.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Pechblender"
+theme = "hermit-master"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "yourdiscussshortname"
 
-[params]
-customCSS = [
-	"style/style.css",
-	"style/theme.sass",
-] # Path relative to assets folder
-customJS = ["js/console.js"] # Path relative to assets folder
-# Homepage description
-# For blog page description you can overwrite it 
-# in the front matter
-description = "Boilerplate website"
-email = "mail@example.com"
-favicon = '/favicon.ico'
-# Dark mode support
-# Supported value are :
-# - off
-# - always
-# If commented the theme will use the browser theme.
-# darkMode = 'always'
+[author]
+  name = "E. Heimansberg"
 
-# Social parameters for contact_icons widget
-[[params.social]]
-alt = "email icon"
-icon = "/icons/email.svg"
-name = "email"
-url = "mailto:mail@example.com"
-
-[[params.social]]
-alt = "github icon"
-blank = true
-icon = "/icons/github.svg"
-name = "github"
-url = "https://github.com/"
-
-[[params.social]]
-alt = "medium icon"
-blank = true
-icon = "/icons/medium.svg"
-name = "medium"
-url = "https://medium.com/"
-
-[[params.social]]
-alt = "stack-overflow icon"
-blank = true
-icon = "/icons/stack-overflow.svg"
-name = "stack-overflow"
-url = "https://stackoverflow.com/"
-
-[[params.social]]
-alt = "twitter icon"
-blank = true
-icon = "/icons/twitter.svg"
-name = "twitter"
-url = "https://twitter.com/"
-
-[[params.social]]
-alt = "facebook icon"
-blank = true
-icon = "/icons/facebook.svg"
-name = "facebook"
-url = "https://facebook.com/"
-
-# Navigation bar
-[menu]
-
-[[menu.main]]
-identifier = "home" # identifier is use for translations
-pre = "" # pre is inserted before the translation (icons, image, etc)
-url = "/" 
-weight = 10 
-
-[[menu.main]]
-identifier = "blog" # identifier is use for translations
-pre = "" # pre is inserted before the translation (icons, image, etc)
-url = "/blog/" 
-weight = 20 
-
-[[menu.main]]
-identifier = "contact" # identifier is use for translations
-pre = "" # pre is inserted before the translation (icons, image, etc)
-url = "/#contact" 
-weight = 30 
-
-# Syntax highlightning
-[markup.highlight]
-guessSyntax = true 
-lineNumbersInTable = true 
-noClasses = false # Set to false to use the Pico default theme.
-tabWidth = 2 
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
 
 [taxonomies]
-category = "categories"
-tag = "tags"
+  tag = "tags"
+  # Categories are disabled by default.
 
-# Translation
-# English, French and Italian are supported but you can contribute
-# by adding translation to i18n/ folder.
-[languages.en]
-contentDir = 'content/en'
-languageCode = 'en'
-languageName = 'English'
-weight = 0
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-[languages.fr]
-contentDir = 'content/fr'
-languageCode = 'fr'
-languageName = 'Français'
-weight = 2
+  # Metadata mostly used in document's head
+  # description = ""
+   images = [""]
+  themeColor = "#494f5c"
 
-# Uncomment the following lines to add an italian translation.
-# [languages.it]
-# contentDir = 'content/it'
-# languageCode = 'it'
-# languageName = 'Italiano'
-# weight = 3
+  homeSubtitle = "Analog Photography & Music"
+  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  bgImg = "https://preview.redd.it/uk99ic8072m61.jpg?width=960&crop=smart&auto=webp&s=7106c5e767367777a4856211683d8e3da1e6c798"  # Homepage background-image URL
 
-# Uncomment the following lines to add an spanish translation.
-# [languages.es]
-# contentDir = 'content/es'
-# languageCode = 'es'
-# languageName = 'Español'
-# weight = 4
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/username/repository/commit/"
+
+  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  justifyContent = false  # Set "text-align: justify" to `.content`.
+
+  relatedPosts = false  # Add a related content section to all single posts page
+
+  code_copy_button = true # Turn on/off the code-copy-button for code-fields
+  
+  # Add custom css
+  # customCSS = ["css/foo.css", "css/bar.css"]
+
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/meisenberg999"
+
+  [[params.social]]
+    name = "instagram"
+    url = "https://instagram.com/pechblender"
+
+  [[params.social]]
+    name = "bandcamp"
+    url = "https://bandcamp.com/orpiment"
+
+  [[params.social]]
+    name = "youtube"
+    url = "https://youtube.com/pechblender"
+
+
+
+ # [[params.social]]
+  #  name = "github"
+   # url = "https://github.com/"
+
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about-hugo/"
+    weight = 20

@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://www.example.com"
+baseURL = "https://www.pachblender.onrender.com"
 title = "Persian"
 theme = "persian-hugo-master"
 languageName = "En"

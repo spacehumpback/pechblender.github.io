@@ -1,8 +1,8 @@
 # Site settings
-baseurl = "http://example.org/"
+baseurl = "http://pechblender.onrender.com/"
 languageCode = "en-us"
 title = "Photo Grid - Grid Gallery For Hugo"
-theme = "photo-grid"
+theme = "photo-grid-master"
 
 # Enter your tracking code to enable Google Analytics
 # googleAnalytics = "UA-XXXXXXXX-Y"x

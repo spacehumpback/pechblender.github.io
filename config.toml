@@ -33,7 +33,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   # Metadata mostly used in document's head
   # description = ""
-   images = ["images/bg.jpg"]
+   images = ["images/hermit.png"]
   themeColor = "#494f5c"
 
   homeSubtitle = "Analog Photography & Music"

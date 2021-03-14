@@ -1,6 +1,6 @@
 {{ define "head" }}
 	{{ if .Site.Params.bgImg -}}
-	<style>.bg-img {background-image: /images/bg.jpg('{{.Site.Params.bgImg}}');}</style>
+	<style>.bg-img {background-image: url('{{.Site.Params.bgImg}}');}</style>
 	{{- else if .Site.Params.images -}}
 		{{- range first 1 .Site.Params.images -}}
 		<style>.bg-img {background-image: url('{{. | absURL}}');}</style>
@@ -10,7 +10,7 @@
 
 {{ define "main" }}
 	{{- if (or .Site.Params.images .Site.Params.bgImg) }}
-	<div class="(images/banner.jpg)"></div>
+	<div class="(/images/bg.jpg)"></div>
 	{{- end }}
 	<div id="spotlight" class="animated fadeIn">
 		<div id="home-center">
